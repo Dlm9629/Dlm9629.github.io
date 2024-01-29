@@ -61,3 +61,21 @@ h2,
 h3 {
   margin: 0px;
 }
+#Title {
+  color: blue;
+  background-color: aqua;
+}
+.Hobbies {
+  color: green;
+}
+#Interss {
+  color: orange;
+  font-size: xx-large;
+}
+#CurrentLoc {
+  font-size: 25px;
+  color: blueviolet;
+}
+#miname {
+  font-size: 30px;
+}
