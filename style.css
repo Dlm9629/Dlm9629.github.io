@@ -154,5 +154,10 @@ h3 {
     justify-content: center;
   }
 }
-#sssd {color: blue; background-color: aqua;}
-.p-list {color: green}
+#sssd {
+  color: blue;
+  background-color: aqua;
+}
+.p-listt {
+  color: green;
+}
