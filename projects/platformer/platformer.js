@@ -56,7 +56,7 @@ $(function () {
     // TODO 2
     createCollectable("database", 165, 500, 0, 0);
     createCollectable("database", 1000, 150, 0, 0);
-    createCollectable("database", 1350, 690, 0, 0)
+    createCollectable("coin", 1350, 690, 0, 0);
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
@@ -65,7 +65,7 @@ $(function () {
     // TODO 3
     createCannon("right", 600, 1000);
     createCannon("top", 100, 900);
-    createCannon("bottom", 1200, 650)
+    createCannon("bottom", 1200, 650);
     // Create cannons
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
