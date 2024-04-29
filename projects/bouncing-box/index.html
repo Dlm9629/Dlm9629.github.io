@@ -42,8 +42,9 @@
         var board = jQuery(".board"); // reference to the HTML .board element
         var boardWidth = board.width(); // the maximum X-Coordinate of the screen
         var boardHeight = jQuery(window).height();
+        var randNum = Math.random() * 100;
         // Every 50 milliseconds, call the update Function (see below)
-        setInterval(update, 50);
+        var interval = setInterval(update, 50);
 
         // Every time the box is clicked, call the handleBoxClick Function (see below)
         box.on("click", handleBoxClick);
@@ -71,6 +72,8 @@
         var speed = 10;
         var positionY = 0;
         var speedY = 10;
+        var misClicks = 0;
+        
         
         /*
       	This Function will be called 20 times/second. Each time it is called,
@@ -102,8 +105,10 @@
       	it should increase the points total, increase the speed, and move the box to
       	the left side of the screen.
       	*/
+
         function handleBoxClick() {
           positionX = 0;
+          board = board + 1
           points = points + 1;
           if (speed > 0) {
             speed = speed + 3;
@@ -111,8 +116,16 @@
             speed = speed - 3;
           }
           
+          
           changeBoxText(points);
          
+        }
+
+        function endGame() {
+          clearInterval(interval);
+          if (board === 1) {
+            points = 0
+          }
         }
       })();
     </script>
