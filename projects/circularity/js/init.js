@@ -24,7 +24,8 @@ var init = function (window) {
       circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
     physikz.addRandomVelocity(circle, canvas, 2.5, 2.5);
     view.addChild(circle);
-    circles.push(circle);}
+    circles.push(circle);
+  }
     // TODO 3 / 7 : Call the drawCircle() function
     
     var loopsCompleted = 0;
@@ -32,7 +33,7 @@ while (loopsCompleted < 100) {
   drawCircle();
   loopsCompleted++;
 }
-}   
+   
     ////////////////////////////////////////////////////////////
     ///////////////// PROGRAM LOGIC ////////////////////////////
     ////////////////////////////////////////////////////////////
@@ -92,8 +93,8 @@ while (loopsCompleted < 100) {
     game.update = update;
 
     app.addUpdateable(window.opspark.game);
-  };
-
+  }
+}
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((
